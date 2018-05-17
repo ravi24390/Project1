@@ -1,0 +1,4 @@
+default:  --no-color --format pretty --format html --out results.html --format json -o cucumber.json
+rerun:    --no-source --no-color --format pretty --format json -o cucumber.json --format rerun --out rerun.txt
+autotest: --format pretty --format html --out results.html --format json -o cucumber.json
+retry:    --format pretty --format html --out results.html --format json -o cucumber.json -- retry 2 --tags=@run
